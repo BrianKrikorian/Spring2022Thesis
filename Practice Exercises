@@ -1,2 +1,1 @@
-gh auth login
-git verify
+git start master
