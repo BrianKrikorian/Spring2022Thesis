@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ede673-358e-4aaa-963b-e1fa08160380" name="Default Changelist" comment="" />
+    <list default="true" id="54ede673-358e-4aaa-963b-e1fa08160380" name="Default Changelist" comment="git start master">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice Exercises" beforeDir="false" afterPath="$PROJECT_DIR$/Practice Exercises" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -27,12 +49,47 @@
       <option name="presentableId" value="Default" />
       <updated>1642962683736</updated>
     </task>
+    <task id="LOCAL-00001" summary="git start master">
+      <created>1642963995264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642963995264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git start master">
+      <created>1642964126910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642964126910</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git start master" />
+    <option name="LAST_COMMIT_MESSAGE" value="git start master" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642962814933">
-      <screen x="0" y="25" width="1440" height="801" />
+    <state x="184" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642964165481">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="184" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1642964165481" />
     <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.801@0.25.1440.801" timestamp="1642962814933" />
+    <state x="416" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1642963891798">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="416" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1642963891798" />
   </component>
 </project>
