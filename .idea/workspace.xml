@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54ede673-358e-4aaa-963b-e1fa08160380" name="Default Changelist" comment="git start master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice Exercises" beforeDir="false" afterPath="$PROJECT_DIR$/Practice Exercises" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice Exercises" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="EditorConfig" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Exercises" type="ShConfigurationType">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,21 +97,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git start master" />
     <option name="LAST_COMMIT_MESSAGE" value="git start master" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642964165481">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="184" y="25" width="1071" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642965890147">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state x="184" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1642964165481" />
     <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.801@0.25.1440.801" timestamp="1642962814933" />
+    <state x="184" y="25" width="1071" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.804@0.25.1440.804" timestamp="1642965890147" />
     <state x="416" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1642963891798">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="416" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1642963891798" />
+    <state x="457" y="234" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1642965826477">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state x="457" y="234" key="#com.intellij.ide.util.TreeClassChooserDialog/0.25.1440.804@0.25.1440.804" timestamp="1642965826477" />
     <state x="467" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1642964235470">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
