@@ -19,14 +19,15 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ede673-358e-4aaa-963b-e1fa08160380" name="Default Changelist" comment="git start master" />
+    <list default="true" id="54ede673-358e-4aaa-963b-e1fa08160380" name="Default Changelist" comment="git start master">
+      <change afterPath="$PROJECT_DIR$/Exercises" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,12 +49,12 @@
   <component name="RunManager">
     <configuration name="Exercises" type="ShConfigurationType">
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_PATH" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
@@ -103,19 +104,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -127,16 +116,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="git start master" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="25" width="1071" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642965890147">
+    <state x="184" y="25" width="1071" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642967587063">
       <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state x="184" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1642964165481" />
     <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.801@0.25.1440.801" timestamp="1642962814933" />
-    <state x="184" y="25" width="1071" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.804@0.25.1440.804" timestamp="1642965890147" />
-    <state x="416" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1642963891798">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="184" y="25" width="1071" height="804" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.804@0.25.1440.804" timestamp="1642967587063" />
+    <state x="416" y="254" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1642967541985">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state x="416" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1642963891798" />
+    <state x="416" y="254" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.804@0.25.1440.804" timestamp="1642967541985" />
     <state x="457" y="234" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1642965826477">
       <screen x="0" y="25" width="1440" height="804" />
     </state>
