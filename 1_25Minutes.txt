@@ -10,5 +10,3 @@ Brian Krikorian
 * Collect data (from 2020-2021 season, so no need to update every day) for every player, including their position
 * Average out all stats for each position (.csv file for each position) and make a formula similar to WAR, but relative to points in a game, not wins in a season
 * Put these notes in the repository, to go over next meeting
-git add 1_25 Minutes.txt
-git commit -m "initial commit"
