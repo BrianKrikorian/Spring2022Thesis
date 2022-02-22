@@ -1,8 +1,0 @@
-﻿* Create R program to take data, create metrics, and then standardize them
-* Put raw data in .csv file in data folder on Git
-* Rest of the data created by an R program
-* To tell whether or not PAR is a good statistic, compare it with other statistics via correlation matrices
-* Team points/minutes a certain player plays
-* Fit a regression with this as the predictor, look at the correlation coefficients
-   * Close to 1 = strong correlation
-* Compare correlation of this with my metric as well as others
