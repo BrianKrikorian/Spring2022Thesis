@@ -1,8 +1,7 @@
 # MINUTES
 
 ## 3/9 Minutes
-* Items in R file as vectors, not lists most likely (especially position)
-* Ifelse statements to instantiate the coefficient vector based on position, or you could just load in the vectors in the .csv file themselves based on position (try the latter first)
+* Load coefficient vectors into the .csv file, call them from there.
 * Once coefficient vectors are worked out, work on getting R^2 back up to where you want
 	* Could look at it as an optimization problem, where you are finding the best X (coefficient vector) to raise your R^2.
 * Focus first on shooting guards, tweaking that, as its R^2 is lowest, and that is probably what is lowering the total R^2.
