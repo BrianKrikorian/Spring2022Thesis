@@ -1,5 +1,16 @@
 # MINUTES
 
+## 3/22 Minutes
+* Do not need the extra files Michael had in his thesis, because I am using a .tex file, not .rmd
+* Use Michael's "Response to Comments" template in order to get the .tex file to compile
+* Plots to include in manuscript
+	* All 4 existing measures I'm comparing with vs. PAR
+	* Breaking down PAR by position (top 10 at each position)
+* Highlight the one player that has an 8 PAR and an 8 VORP (massive outlier, I believe it is Nikola Jokic)
+* Discuss the idea of having a negative PAR, or a negative VORP
+* Legend for the scale of PAR, where a certain PAR value ranks you in terms of player role
+* Literature Review should include any existing studies of how effective metrics are
+	
 ## 3/9 Minutes
 * Load coefficient vectors into the .csv file, call them from there.
 * Once coefficient vectors are worked out, work on getting R^2 back up to where you want
