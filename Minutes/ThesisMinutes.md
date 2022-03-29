@@ -4,6 +4,7 @@
 * The 2 graphs that look off are due to different ranges in the metrics, explain why these metrics have different ranges and why it makes sense
 * Distribution graph in order to tell the legend, use median, not mean? Would provide more even breakage
 * Clean up repo folder, get pdf to compile
+* Discussion section: Discuss why this metric lines up with others, and why people should be using it
 
 ## 3/22 Minutes
 * Do not need the extra files Michael had in his thesis, because I am using a .tex file, not .rmd
