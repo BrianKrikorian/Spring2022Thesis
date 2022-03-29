@@ -137,13 +137,193 @@ metric, Points Above Replacement, PAR.
 % Analyze Graphs of PAR, filter by position perhaps?
 % Any other tests that should be done?
 First, the top 10 players in terms of PAR in the league will be analyzed. Then, the top 10 PAR values at each position will be evaluated.
-%NBA PAR Ranking
-As can be seen, one player rises above all others in both PAR and VORP. That player is Nikola Jokic of the Denver Nuggets, and this "outlier" makes perfect sense, and helps show just how dominant his MVP season was. Not only did Jokic average 26.4 points, 10.8 rebounds, and 8.3 assists per game, he was doing it from the center position. Having a center that has the ability to perform in all aspects of the game, even those that his position does not require, proves his value to his team, which is why his value is so much higher in both the new PAR metric, and the accepted VORP metric.
-%Point Guard PAR Ranking
-%Shooting Guard PAR Ranking
-%Small Forward PAR Ranking
-%Power Forward PAR Ranking
-%Center PAR Ranking
+\begin{NBAtable}[tbp]
+  \caption{PAR Values from the Entire NBA)
+  \label{tab:NBAtable}
+\centering
+\begin{tabular}[t]{lccllll}
+  \toprule
+  Rank & Player & Position & Team & PAR\\
+  \midrule
+ 1 & Nikola Jokic & C & Denver Nuggets & 7.69\\
+  \midrule
+ 2 & Nikola Vucevic & C & Orlando Magic & 6.55\\
+  \midrule
+ 3 & Julius Randle & PF & New York Knicks & 6.49\\
+  \midrule
+ 4 & Luka Doncic & PG & Dallas Mavericks & 4.61\\
+  \midrule
+ 5 & Damian Lillard & PG & Portland Trail Blazers & 4.47\\
+  \midrule
+ 6 & Giannis Antetokounmpo & PF & Milwaukee Bucks & 4.21\\
+  \midrule
+ 7 & Stephen Curry & PG & Golden State Warriors & 4.17\\
+  \midrule
+ 8 & Russell Westbrook & PG & Washington Wizards & 4.05\\
+  \midrule
+ 9 & Jayson Tatum & SF & Boston Celtics & 3.96\\
+  \midrule
+ 10 & Domanatas Sabonis & PF & Indiana Pacers & 3.21\\
+  \bottomrule
+\end{tabular}
+\end{NBAtable}
+
+As can be seen, one player rises above all others in both PAR and VORP. That player is Nikola Jokic of the Denver Nuggets, and this "outlier" makes perfect sense, and helps show just how dominant his MVP season was. Not only did Jokic average 26.4 points, 10.8 rebounds, and 8.3 assists per game, he was doing it from the center position. Having a center that has the ability to perform in all aspects of the game, even those that his position does not require, proves his value to his team, which is why his value is so much higher in both the new PAR metric, and the accepted VORP metric. This logic applies to Nikola Vucevic, Julius Randle, Russell Westbrook, and Domanatas Sabonis as well. While they might not be considered the best at their position, or an extremely elite player in the NBA, they are very versatile players, that can do anything on the court, and thus they are rewarded with a high PAR value. This makes sense, as without these players, a lot of the statistics their team accumulates are gone, so while they may not have as much value in the grand scheme of the NBA, they were very much the most valuable players for their teams. Another key thing to note is that some players, such as LeBron James, have a lower PAR than expected, and this could be due to the fact that they played most frequently in a position that did not match their skill set. LeBron James played primarily as a point guard, but his skillset matches that of a small forward or power forward. Thus, his strengths are not adequately measured, as he is essentially being played "out of position".
+\begin{PGtable}[tbp]
+
+  \caption{PAR Values from all Point Guards)
+  \label{tab:PGtable}
+\centering
+\begin{tabular}[t]{lccllll}
+  \toprule
+  Rank & Player & Team & PAR\\
+  \midrule
+ 1 & Luka Doncic & Dallas Mavericks & 4.61\\
+  \midrule
+ 2 & Damian Lillard & Portland Trail Blazers & 4.47\\
+  \midrule
+ 3 & Stephen Curry & Golden State Warriors & 4.17\\
+  \midrule
+ 4 & Russell Westbrook & Washington Wizards & 4.05\\
+  \midrule
+ 5 & Trae Young & Atlanta Hawks & 2.69\\
+  \midrule
+ 6 & De'Aaron Fox & Sacramento Kings & 1.94\\
+  \midrule
+ 7 & Chris Paul & Phoenix Suns & 1.93\\
+  \midrule
+ 8 & Kyrie Irving & Brooklyn Nets & 1.74\\
+  \midrule
+ 9 & Dejounte Murray & San Antonio Spurs & 1.64\\
+  \midrule
+ 10 & Ja Morant & Memphis Grizzlies & 1.45\\
+  \bottomrule
+\end{tabular}
+\end{PGtable}
+
+\begin{SGtable}[tbp]
+  \caption{PAR Values from all Shooting Guards)
+  \label{tab:SGtable}
+\centering
+\begin{tabular}[t]{lccllll}
+  \toprule
+  Rank & Player & Team & PAR\\
+  \midrule
+ 1 & Bradley Beal & Washington Wizards & 3.17\\
+  \midrule
+ 2 & Devin Booker & Phoenix Suns & 2.74\\
+  \midrule
+ 3 & Terry Rozier & Charlotte Hornets & 2.59\\
+  \midrule
+ 4 & Zach Lavine & Chicago Bulls & 2.29\\
+  \midrule
+ 5 & RJ Barrett & New York Knicks & 2.28\\
+  \midrule
+ 6 & Anthony Edwards & Minnesota Timberwolves & 2.22\\
+  \midrule
+ 7 & Jaylen Brown & Boston Celtics & 1.87\\
+  \midrule
+ 8 & Collin Sexton & Cleveland Cavaliers & 1.85\\
+  \midrule
+ 9 & Buddy Hield & Sacramento Kings & 1.72\\
+  \midrule
+ 10 & Norman Powell & Toronto Raptors & 1.37\\
+  \bottomrule
+\end{tabular}
+\end{SGtable}
+
+\begin{SFtable}[tbp]
+  \caption{PAR Values from all Small Forwards)
+  \label{tab:SFtable}
+\centering
+\begin{tabular}[t]{lccllll}
+  \toprule
+  Rank & Player & Team & PAR\\
+  \midrule
+ 1 & Jayson Tatum & Boston Celtics & 3.96\\
+  \midrule
+ 2 & Khris Middleton & Milwaukee Bucks & 2.39\\
+  \midrule
+ 3 & Brandon Ingram & New Orleans Pelicans & 2.13\\
+  \midrule
+ 4 & Kawhi Leonard & Los Angeles Clippers & 1.58\\
+  \midrule
+ 5 & Paul George & Los Angeles Clippers & 1.44\\
+  \midrule
+ 6 & Michael Porter Jr. & Denver Nuggets & 1.42\\
+  \midrule
+ 7 & Jimmy Butler & Miami Heat & 1.41\\
+  \midrule
+ 8 & Bojan Bogdonavic & Utah Jazz & 1.35\\
+  \midrule
+ 9 & Mikal Bridges & Phoenix Suns & 1.19\\
+  \midrule
+ 10 & Jerami Grant & Detroit Pistons & 1.14\\
+  \bottomrule
+\end{tabular}
+\end{SFtable}
+
+\begin{PFtable}[tbp]
+  \caption{PAR Values from all Power Forwards)
+  \label{tab:PFtable}
+\centering
+\begin{tabular}[t]{lccllll}
+  \toprule
+  Rank & Player & Team & PAR\\
+  \midrule
+ 1 & Julius Randle & New York Knicks & 6.49\\
+  \midrule
+ 2 & Giannis Antetokounmpo & Milwaukee Bucks & 4.21\\
+  \midrule
+ 3 & Domanatas Sabonis & Indiana Pacers & 3.21\\
+  \midrule
+ 4 & Zion Williamson & New Orleans Pelicans & 3.07\\
+  \midrule
+ 5 & Andrew Wiggins & Golden State Warriors & 2.26\\
+  \midrule
+ 6 & Demar Derozan & San Antonio Spurs & 1.88\\
+  \midrule
+ 7 & Tobias Harris & Philadelphia 76ers & 1.87\\
+  \midrule
+ 8 & Pascal Siakam & Toronto Raptors & 1.72\\
+  \midrule
+ 9 & John Collins & Atlanta Hawks & 1.35\\
+  \midrule
+ 10 & Harrison Barnes & Sacramento Kings & 1.11\\
+  \bottomrule
+\end{tabular}
+\end{PFtable}
+
+\begin{Ctable}[tbp]
+  \caption{PAR Values from all Centers)
+  \label{tab:Ctable}
+\centering
+\begin{tabular}[t]{lccllll}
+  \toprule
+  Rank & Player & Team & PAR\\
+  \midrule
+ 1 & Nikola Jokic & Denver Nuggets & 7.69\\
+  \midrule
+ 2 & Nikola Vucevic & Orlando Magic & 6.55\\
+  \midrule
+ 3 & Rudy Gobert & Utah Jazz & 3.10\\
+  \midrule
+ 4 & Bam Adebayo & Miami Heat & 2.78\\
+  \midrule
+ 5 & Joel Embiid & Philadelphia 76ers & 2.26\\
+  \midrule
+ 6 & Clint Capela & Atlanta Hawks & 2.25\\
+  \midrule
+ 7 & DeAndre Ayton & Phoenix Suns & 2.11\\
+  \midrule
+ 8 & Jonas Valanciunas & Memphis Grizzlies & 1.98\\
+  \midrule
+ 9 & Karl-Anthony Towns & Minnesota Timberwolves & 1.82\\
+  \midrule
+ 10 & Kelly Olynyk & Miami Heat & 1.39\\
+  \bottomrule
+\end{tabular}
+\end{Ctable}
 
 PAR will also be compared with the 4 accepted advanced metrics that were used as regressors in the multiple regression on PAR. These include Player Efficiency Rating, Win Shares, Box Plus Minus, and Value Over Replacement Player
 %PAR vs. PER
