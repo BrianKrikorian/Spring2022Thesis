@@ -1,5 +1,27 @@
 # MINUTES
 
+## 4/5 Minutes
+* Keywords are required, should be listed in alphabetical order, and should not repeat any words that are in the title
+* For tables, there should only be one horizontal line, after the initial row
+	* Using the xtable package should assist in creating your tables
+* Tables also need to fit, so if an entry needs to take up 2 rows, so be it
+* No title needed for graphs that already have a caption
+* Line width is currently 102, want to get it to 80
+* Use tbp instead of H, tables need to be "float"
+* Professor Yan putting in comments in red in Manuscript file
+* Delete all vfills, do not need to manually space like that
+* Delete the lines of code that number equations and tables
+* Don't need to include Acknowledgements section, unless you have something to thank them for
+* citet and citep for bibliography
+	* Key for next week's meeting, add Literature Review and Bibliography
+* Work on the spacing, keep in mind every blank line is a new paragraph
+* Put multiple regression coefficients in a table, with coefficient, standard error, and p-value, don't take a screenshot of the output
+* Don't use PNG files, change the R code to generate PDF files instead
+* Add to Intro
+* Break down Data into smaller sections
+* Methods: fix equation, see how Prof. Yan did it
+* Refer to your tables and figures throughout the paper.
+
 ## 3/29 Minutes
 * The 2 graphs that look off are due to different ranges in the metrics, explain why these metrics have different ranges and why it makes sense
 * Distribution graph in order to tell the legend, use median, not mean? Would provide more even breakage
