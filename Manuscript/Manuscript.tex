@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, titlepage]{article}
 \usepackage[margin=1in]{geometry}
 
 \usepackage{float}
@@ -35,8 +35,8 @@
 
 \usepackage[labelfont={footnotesize,bf} , textfont=footnotesize]{caption}
 \captionsetup{labelformat=simple, labelsep=period}
-\newcommand\num{\addtocounter{equation}{1}\tag{\theequation}}
-\renewcommand{\theequation}{\arabic{equation}}
+% \newcommand\num{\addtocounter{equation}{1}\tag{\theequation}}
+% \renewcommand{\theequation}{\arabic{equation}}
 \makeatletter
 \renewcommand\tagform@[1]{\maketag@@@ {\ignorespaces {\footnotesize{\textbf{Equation}}} #1.\unskip \@@italiccorr }}
 \makeatother
@@ -53,7 +53,8 @@
 \newenvironment{comment}%
 {\begin{quoting}\noindent\small\it\ignorespaces%
   }{\end{quoting}}
- \title{Points Above Replacement: A New NBA Metric to Evaluate Player Performance}
+
+\title{Points Above Replacement: A New NBA Metric to Evaluate Player Performance}
 \author{
 Brian Krikorian*, Jun Yan \\ \medskip 
 Department of Statistics, University of Connecticut, Storrs, CT  \\  \medskip 
@@ -96,8 +97,13 @@ Mentor: jun.yan@uconn.edu
        Storrs, CT\\
             
    \end{center}
-\end{titlepage}
+ \end{titlepage}
+
+
 % Abstracts are required.
+
+\jy{watch linewidth in source; keep it under 80}
+ 
 \section*{Abstract}
 In attempting to predict the score of an NBA game, players who are injured, suspended, or for any other 
 reason not playing have a significant impact on said prediction. Baseball uses a statistic called Wins Above 
@@ -208,8 +214,12 @@ negative, which allows for a scale of not only the good a player does, but also 
 coefficient method is similar to the Positional Adjustment metric applied in WAR calculation, which seeks to 
 adjust a player's importance based on what is expected of their position. The coefficients for each position are listed below.
 
-\vfill
-\begin{table}[H]
+
+\jy{no hard coded spacing like vfill}
+
+\jy{no horizontal lines in tables; float with tbp}
+
+\begin{table}[tbp]
   \caption{Coefficients for Each Statistic in Offensive and Defensive Points}
   \label{tab:Coefficientstable}
 \centering
@@ -244,6 +254,9 @@ adjust a player's importance based on what is expected of their position. The co
 \end{tabular}
 \end{table}
 
+
+Table~\ref{tab:Coefficientstable} summarizes ...
+
 The next step was creating a Team Adjustment statistic. As stated before, the PAR metric seeks to 
 anticipate how valuable a player is to their given team, rather than as an average of the entire league. This 
 gives more of an insight of how a team will fare without a certain player. We expect this statistic to change if 
@@ -275,19 +288,19 @@ metric of a players points created as a function of how many minutes he played, 
 metric out a bit more from star players to role players. This statistic serves as the denominator of our PAR 
 calculation.
 
-Once all supporting statistics of PAR have been created, all that is left to do is combine them to achieve our PAR values for each player in the NBA. The formula for PAR is as follows:
-
+Once all supporting statistics of PAR have been created, all that is left to do is combine them to achieve our PAR values for each player in the NBA. The formula for PAR is
 \begin{equation}
-((Offensive Points + DefensivePoints) * (Team Adjustment))/(Points Per Win)
+  \label{eq:par}
+  \frac{(\text{Offensive Points} + \text{Defensive Points}) \times \text{Team Adjustment}}
+  {\text{Points Per Win}}.
 \end{equation}
-
 This gives a good idea of how many points a player accounts for during a game, how important that is for 
 his given team, and how important it is compared to all other players. The last step is to standardize this 
 PAR statistic, so that the mean is 0, and the standard deviation is 1. Logically, this helps the idea of the 
 metric in the sense that a perfectly league average player should have a PAR of 0, and his presence or 
 absence from his team neither adds nor subtracts value. Thus, we have created a new NBA player metric, 
 Points Above Replacement, PAR.
- 
+
  
 \section{Results}
 % Multiple Regression
