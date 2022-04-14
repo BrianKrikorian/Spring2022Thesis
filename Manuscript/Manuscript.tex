@@ -360,8 +360,8 @@ also what they do poorly. This
 coefficient method is similar to the Positional Adjustment metric applied in 
 WAR calculation, which seeks to 
 adjust a player's importance based on what is expected of their position. 
-The coefficients for each position are listed in table 
-\ref{tab:Coefficientstable}. Coefficients are subjective, but were changed 
+The coefficients for each position are listed in
+Table~\ref{tab:Coefficientstable}. Coefficients are subjective, but were changed
 to have a constant scale by position, and create a PAR scale that lined up 
 closely with other advanced metrics.
 
@@ -452,14 +452,12 @@ calculation.
 Once all supporting statistics of PAR have been created, all that is left to 
 do is combine them to achieve our PAR values for each player in the 
 NBA. The formula for PAR is listed below.
-
 \begin{equation}
  \label{eq:PAR}
   \frac{(\text{Offensive Points} + \text{Defensive Points}) \times \text{Team Adjustment}}
   {\text{Points Per Win}}.
 \end{equation}
-
-\ref{eq:PAR} gives a good idea of how many points a player accounts for 
+Equation~\eqref{eq:PAR} gives a good idea of how many points a player accounts for 
 during a 
 game, how important that is for 
 his given team, and how important it is compared to all other players. The 
@@ -501,7 +499,8 @@ First, the top 10 players in terms of PAR in the league will be analyzed. Then, 
 \end{tabular}
 \end{table}
 
-As can be seen in \ref{tab:NBAtable}, one player rises above all others in 
+\jy{Refer to a table or figure like this:}
+As can be seen in Table~\ref{tab:NBAtable}, one player rises above all others in 
 both PAR and VORP. 
 That player is Nikola Jokic of the 
 Denver Nuggets, and this "outlier" makes perfect sense, and helps show 
@@ -533,6 +532,9 @@ skillset matches that of a small
 forward or power forward. Thus, his strengths are not adequately 
 measured, as he is essentially being 
 played "out of position".
+
+\jy{The two tables for guards could be combined into one; and the same for
+  forwards}
 
 \begin{table}[tbp]
   \caption{PAR Values from all Point Guards}
@@ -650,9 +652,10 @@ multiple regression on PAR. These include Player Efficiency Rating, Win
 Shares, Box Plus Minus, and 
 Value Over Replacement Player.
 
+\jy{don't scale figures; control their sizes in R when generating them;}
 \begin{figure}[tbp]
   \centering
-  \includegraphics[scale = 0.6]{PERvsPAR}
+  \includegraphics[width=\textwidth]{PERvsPAR}
   \caption{Player Efficiency Ratings (x) vs. Points Above Replacement (y)}
   \label{fig:Fig1}
 \end{figure}
@@ -720,7 +723,8 @@ VORP & 0.558947 & 0.048688 & Less Than 2 * e-16\\
 \end{tabular}
 \end{table}
 
-Not included in the table \ref{tab:MultipleRegression} is the adjusted 
+\jy{two many digits in this table}
+Not included in the Table~\ref{tab:MultipleRegression} is the adjusted 
 R-squared 
 value of 0.6974. This 
 statistic is key, as it shows that 69.74 percent of variation 
