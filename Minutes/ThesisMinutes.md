@@ -1,5 +1,22 @@
 # MINUTES
 
+## 4/19 Minutes
+* 3 digits on Multiple Regression Table
+* Use the \times command for that table as well
+* Mention R^2, SER, etc. all in the text after the table
+* Protect citations with {} to capitalize letters
+* Use pdf function, push it into repository
+* Negative sign via math mode in Multiple Regression Table
+* Don't start a sentence with numbers (page 12, "90th to 95th").
+* Quotations on the left hand side should be the key under escape, `, otherwise it looks backwards.
+* Center columns in all tables
+* Table 1 is the subjective part, discuss that part a bit more
+	* Include that this is a limitations that could change, could be tuning to get R^2 as high as possible
+* Paragraph on page 4 is too long, break it up
+* Citation on page 3, list organization as author
+	* (authory, year) style for citations)
+* American Journal of Undergraduate Research, Journal of Sports Analytics
+
 ## 4/5 Minutes
 * Keywords are required, should be listed in alphabetical order, and should not repeat any words that are in the title
 * For tables, there should only be one horizontal line, after the initial row
