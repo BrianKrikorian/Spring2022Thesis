@@ -14,7 +14,8 @@
 	* Include that this is a limitations that could change, could be tuning to get R^2 as high as possible
 * Paragraph on page 4 is too long, break it up
 * Citation on page 3, list organization as author
-	* (authory, year) style for citations)
+	* (author, year) style for citations)
+* Add more in the Discussion section about limitations
 * American Journal of Undergraduate Research, Journal of Sports Analytics
 
 ## 4/5 Minutes
