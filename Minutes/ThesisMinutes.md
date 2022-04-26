@@ -1,5 +1,13 @@
 # MINUTES
 
+## 4/26 Minutes
+* Send to Michael Cunningham just so he has it, but Prof. Yan will handle grading
+* Change height and width of pdf's in R code so that they fit nicer on the page
+* Try using "tbp" for tables and figures again, see if you can get it to fit better
+* Use eqref instead of ref when referring to an equation, should parenthesize the equation number
+* Look into ggplot on Michael's paper to see how he did it, could make figures look nicer
+* Continue working on it with Prof. Yan after graduation, see if you can get published!
+
 ## 4/19 Minutes
 * 3 digits on Multiple Regression Table
 * Use the \times command for that table as well
