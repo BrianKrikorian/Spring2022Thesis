@@ -14,7 +14,8 @@ biblio-style: asa
 ---
 
 ```{r data, include=FALSE}
-league <- read.csv(file = '~/Documents/GitHub/Spring2022Thesis/Data/League.csv', stringsAsFactors = TRUE, header = TRUE)
+## use relative path for portability
+league <- read.csv(file = '../Data/League.csv', stringsAsFactors = TRUE, header = TRUE)
 ```
 
 ```{r initialize variables, echo=FALSE}
