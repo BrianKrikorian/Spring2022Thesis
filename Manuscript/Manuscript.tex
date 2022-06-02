@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[titlepage, 12pt]{article}
 \usepackage[margin=1in]{geometry}
 
 \usepackage{float}
@@ -18,8 +18,6 @@
 \DeclareMathOperator*{\cov}{Cov}
 \DeclareMathOperator*{\corr}{Corr}
 
-\usepackage{xr}
-
 
 % remove left indentation in itemize
 \usepackage{enumitem}
@@ -31,15 +29,6 @@
 % graph path
 \graphicspath{{./figs/}}
 
-\usepackage{geometry}
-\geometry{vmargin={1in,1in}, hmargin={.75in, .75in}}
-
-%\usepackage[labelfont={footnotesize,bf} , textfont=footnotesize]{caption}
-%\captionsetup{labelformat=simple, labelsep=period}
-%\newcommand\num{\addtocounter{equation}{1}\tag{\theequation}}
-%\renewcommand{\theequation}{\arabic{equation}}
-%\makeatletter
-%\renewcommand\tagform@[1]{\maketag@@@ {\ignorespaces {\footnotesize{\textbf{Equation}}} #1.\unskip \@@italiccorr }}
 \makeatother
 \setlength{\intextsep}{10pt}
 \setlength{\abovecaptionskip}{2pt}
@@ -49,57 +38,49 @@
 \renewcommand{\bottomfraction}{0.85}
 \renewcommand{\floatpagefraction}{0.90}
 
+\usepackage[]{lineno}
+\linenumbers*[1]
+%% patches to make lineno work better with amsmath
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+	\expandafter\let\csname old#1\expandafter\endcsname\csname 
+	#1\endcsname
+	\expandafter\let\csname oldend#1\expandafter\endcsname\csname 
+	end#1\endcsname
+	\renewenvironment{#1}%
+	{\linenomath\csname old#1\endcsname}%
+	{\csname oldend#1\endcsname\endlinenomath}}%
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+	\patchAmsMathEnvironmentForLineno{#1}%
+	\patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+	\patchBothAmsMathEnvironmentsForLineno{equation}%
+	\patchBothAmsMathEnvironmentsForLineno{align}%
+	\patchBothAmsMathEnvironmentsForLineno{flalign}%
+	\patchBothAmsMathEnvironmentsForLineno{alignat}%
+	\patchBothAmsMathEnvironmentsForLineno{gather}%
+	\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+
+
 \quotingsetup{leftmargin = 0pt}
 
 \newenvironment{comment}%
 {\begin{quoting}\noindent\small\it\ignorespaces%
   }{\end{quoting}}
- \title{Points Above Replacement: A New NBA Metric to Evaluate Player Performance}
+
+
+\title{Points Above Replacement: A New NBA Metric to Evaluate Player Performance}
 \author{
 Brian Krikorian*, Jun Yan \\ \medskip 
 Department of Statistics, University of Connecticut, Storrs, CT  \\  \medskip 
-Students: brian.krikorian@uconn.edu* \\
-Mentor: jun.yan@uconn.edu 
+brian.krikorian@uconn.edu* \\
+ jun.yan@uconn.edu 
 }
 
 \begin{document}
+\maketitle
 
-\begin{titlepage}
-   \begin{center}
-       \vspace*{1cm}
-       \Huge
-       \textbf{Points Above Replacement}
-
-       \Large
-       \vspace{0.5cm}
-        A New NBA Metric to Evaluate Player Performance
-            
-       \vspace{1.5cm}
-
-       \textbf{Brian Krikorian}
-       
-       \vfill
-
-       \includegraphics[width=0.4\textwidth]{UCONNwordmark}
-
-       \vfill
-            
-       Mentor: Jun Yan\\
-       Data Science
-            
-       \vspace{0.8cm}
-     
-       \includegraphics[width=0.4\textwidth]{UCONNoakleaf}
-         
-        \Large    
-       Department of Statistics\\
-       University of Connecticut\\
-       Storrs, CT\\
-            
-   \end{center}
-\end{titlepage}
-% Abstracts are required.
-\section*{Abstract}
+\begin{abstract}
 In attempting to predict the score of an NBA game, players who are 
 injured, suspended, or for any other 
 reason not playing have a significant impact on said prediction. Baseball 
@@ -121,15 +102,28 @@ with the created metric along with
 other well-known advanced player metrics is done via a multiple 
 regression.
 
-% Keywords are required.
-\section*{Keywords} 
+\bigskip
+\noindent{\sc Keywords}:
 Analytics; Basketball; Player Value; Sports Data; Statistics; 
-\vspace{.12 in}
-% Start the main part of the manuscript here.
-% Comment out section headings if inappropriate to your discipline.
-% If you add additional section or subsection headings, use an asterisk * to avoid numbering. 
+\end{abstract}
+
+
+
+\jy{Read some articles in JSA to get a feeling of their styles.}
+
+
+\jy{Why is the minimum of PAR just below zero? Does this mean there is barely
+  any players below average?}
+
+\jy{Equations should be part of sentences.}
+
+\jy{The references are weak at this point.}
+
 
 \section{Introduction}
+
+
+
 %Why is this important/interesting? What has been done before on this topic? (Literature Review) What am I introducing that is new? 
 There exists many prediction models for NBA basketball, many with the 
 purpose of anticipating the final 
@@ -380,7 +374,7 @@ as possible. However, a constant scale by position and a relatively high
 correlation to other metrics shows uniqueness in the statistic but also 
 validity.
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{Coefficients for Each Statistic in Offensive and Defensive Points}
   \label{tab:Coefficientstable}
 \centering
@@ -522,7 +516,7 @@ regression, and graphs were created using R \citep{R}.
 % Any other tests that should be done?
 First, the top 10 players in terms of PAR in the league will be analyzed. Then, the top 10 PAR values at each position will be evaluated.
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{PAR Values from the Entire NBA}
   \label{tab:NBAtable}
 \centering
@@ -578,7 +572,7 @@ forward or power forward. Thus, his strengths are not adequately
 measured, as he is essentially being 
 played ``out of position''.
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{PAR Values from all Point Guards}
   \label{tab:PGtable}
 \centering
@@ -600,7 +594,7 @@ played ``out of position''.
 \end{tabular}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{PAR Values from all Shooting Guards}
   \label{tab:SGtable}
 \centering
@@ -622,7 +616,7 @@ played ``out of position''.
 \end{tabular}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{PAR Values from all Small Forwards}
   \label{tab:SFtable}
 \centering
@@ -644,7 +638,7 @@ played ``out of position''.
 \end{tabular}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{PAR Values from all Power Forwards}
   \label{tab:PFtable}
 \centering
@@ -666,7 +660,7 @@ played ``out of position''.
 \end{tabular}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{PAR Values from all Centers}
   \label{tab:Ctable}
 \centering
@@ -694,28 +688,28 @@ multiple regression on PAR. These include Player Efficiency Rating, Win
 Shares, Box Plus Minus, and 
 Value Over Replacement Player.
 
-\begin{figure}[H]
+\begin{figure}[tbp]
   \centering
   \includegraphics[width=\textwidth]{PERvsPAR}
   \caption{Player Efficiency Ratings (x) vs. Points Above Replacement (y)}
   \label{fig:Fig1}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
   \centering
   \includegraphics[width=\textwidth]{WSvsPAR}
   \caption{Win Shares (x) vs. Points Above Replacement (y)}
   \label{fig:Fig2}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
   \centering
   \includegraphics[width=\textwidth]{BPMvsPAR}
   \caption{Box Plus Minus (x) vs. Points Above Replacement (y)}
   \label{fig:Fig3}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[tbp]
   \centering
   \includegraphics[width=\textwidth]{VORPvsPAR}
   \caption{Value Over Replacement Player (x) vs. Points Above Replacement (y)}
@@ -751,7 +745,7 @@ in terms of all of these accepted metrics, a multiple regression will be run,
 with the 4 accepted metrics as 
 regressors, and with PAR as the independent variable.
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{Multiple Regression on PAR}
   \label{tab:MultipleRegression}
 \centering
@@ -791,7 +785,7 @@ sort of ``legend'', a rough guideline
 for what a player's role will be based on the threshold his PAR value falls 
 under.
 
-\begin{table}[H]
+\begin{table}[tbp]
   \caption{PAR Legend}
   \label{tab:PARLegend}
 \centering
@@ -890,10 +884,10 @@ most similar to that of PAR.
 
 % The About the Student Author section is NOT optional.  Write a paragraph about the student; see previous journal editions for examples.
 % If there is more than one student author, you must move the comment below.
-\section*{About the Student Author}
-Brian Krikorian plans to graduate in May 2022 from the University of 
-Connecticut, with a Bachelor's of Science in Data Science, and a minor in 
-Computer Science.
+% \section*{About the Student Author}
+% Brian Krikorian plans to graduate in May 2022 from the University of 
+% Connecticut, with a Bachelor's of Science in Data Science, and a minor in 
+% Computer Science.
 
 % The Press Summary section is NOT optional.  Write a paragraph describing the paper in a manner suitable for the press; see previous journal editions for examples.
 
