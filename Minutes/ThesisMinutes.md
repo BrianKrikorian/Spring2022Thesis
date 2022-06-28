@@ -1,5 +1,15 @@
 # MINUTES
 
+## 6/28 Minutes
+* Equations as part of the sentence means that you shouldn't say "The equation for PAR is listed below". Rather, it should flow naturally as part of the sentence, i.e. "All of these statistics are combined to form PAR, (equation), which allows the prediction of player performance."
+* Get some more and better references, currently at 9 (including reference material), try to double it.
+	* Include in the introduction, make sure to discuss them.
+	* Focus on openWAR (Greg Matthews) and how it utilizes references.
+	* Similar research done in basketball or any sport.
+* Be sure to use command line for git so that comments and changes aren't lost (push, commit, add, etc.).
+	* Don't remove any of Professor Yan's comments until he approves of the changes you made regarding them.
+* Use R code to make plots nicer (ggplot, 2 by 2 square of the plots?) Just so that they fit on the page better.
+* 1) Clean up style 2) Read JSA articles 3) Find more references 4) Use git command line
 ## 4/26 Minutes
 * Send to Michael Cunningham just so he has it, but Prof. Yan will handle grading
 * Change height and width of pdf's in R code so that they fit nicer on the page
