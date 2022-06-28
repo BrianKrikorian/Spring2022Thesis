@@ -9,7 +9,7 @@
 * Be sure to use command line for git so that comments and changes aren't lost (push, commit, add, etc.).
 	* Don't remove any of Professor Yan's comments until he approves of the changes you made regarding them.
 * Use R code to make plots nicer (ggplot, 2 by 2 square of the plots?) Just so that they fit on the page better.
-* 1) Clean up style 2) Read JSA articles 3) Find more references 4) Use git command line
+* i. Clean up style ii. Read JSA articles iii. Find more references iv. Use git command line
 ## 4/26 Minutes
 * Send to Michael Cunningham just so he has it, but Prof. Yan will handle grading
 * Change height and width of pdf's in R code so that they fit nicer on the page
